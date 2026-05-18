@@ -39,6 +39,14 @@ Server listens on `http://127.0.0.1:8000/mcp` by default.
 Copy `.env.example` to `.env` and edit as needed.
 
 
+**PROJECT OVERVIEW**
+
+This project is a Model Context Protocol (MCP) server built using FastMCP. It allows an AI model to interact with Python tools exposed over HTTP. The server enables AI systems to log and analyze data, call external APIs, and perform computations using structured tools.
+
+In this project, the MCP server is used to build an expense tracking system that stores data in a local SQLite database. The AI can log expenses, summarize spending, and check budget limits through natural language prompts.
+
+The server runs locally using Python and is exposed to the internet using ngrok. It is connected to ChatGPT via Developer Mode MCP connectors, allowing ChatGPT to directly call the tools.
+
 **TOOLS AND TECHNOLOGIES USED**
 Python 3.12
  The main programming language used to build the MCP server and implement tool logic.
